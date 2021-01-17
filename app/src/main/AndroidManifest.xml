@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.notified">
 
+    <permission android:name="com.lsteamer.PERMISSIONFORCUSTOM" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -24,6 +25,14 @@
                 <action android:name="android.service.notification.NotificationListenerService" />
             </intent-filter>
         </service>
+
+        <provider
+            android:name=".NotifiedProvider"
+            android:authorities="com.example.notified.data"
+            android:readPermission="com.lsteamer.PERMISSIONFORCUSTOM"
+            android:enabled="true"
+            android:exported="true"
+            android:multiprocess="true" />
     </application>
 
 </manifest>

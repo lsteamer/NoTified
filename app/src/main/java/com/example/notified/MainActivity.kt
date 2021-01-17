@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.provider.Settings
 import android.text.TextUtils
 import androidx.appcompat.app.AppCompatActivity
-import com.example.notified.data.NotifiedProvider
 import com.example.notified.model.Notification
 
 class MainActivity : AppCompatActivity() {

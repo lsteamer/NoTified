@@ -1,10 +1,11 @@
-package com.example.notified.data
+package com.example.notified
 
 import android.content.ContentProvider
 import android.content.ContentValues
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.net.Uri
+import com.example.notified.data.ContentProviderDataBase
 
 class NotifiedProvider : ContentProvider() {
 
