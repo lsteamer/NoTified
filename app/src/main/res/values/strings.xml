@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">NoTified</string>
+    <string name="service_label">NotificationService</string>
+</resources>
